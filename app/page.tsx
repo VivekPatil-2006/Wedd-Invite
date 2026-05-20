@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useEffect } from 'react';
-import { Navbar } from '@/components';
+import { AtmosphericBackdrop, Navbar, ScrollProgress } from '@/components';
 import {
   HeroSection,
   CountdownSection,
@@ -33,6 +33,9 @@ export default function Home() {
 
   return (
     <main className="relative bg-cream dark:bg-dark-charcoal text-dark-charcoal dark:text-cream transition-colors duration-300">
+      <AtmosphericBackdrop />
+      <ScrollProgress />
+
       {/* Navigation */}
       <Navbar coupleInitials={coupleData.initials} />
 

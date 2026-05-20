@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useScroll, useTransform } from 'framer-motion';
 import { ScrollIndicator } from '@/components/ScrollIndicator';
 import { formatDate } from '@/lib/dateUtils';
 
@@ -19,6 +20,9 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
   heroImage,
 }) => {
   const formattedDate = formatDate(weddingDate);
+  const { scrollY } = useScroll();
+  const imageScale = useTransform(scrollY, [0, 500], [1.08, 1.18]);
+  const imageY = useTransform(scrollY, [0, 500], [0, 40]);
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -55,7 +59,12 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           backgroundPosition: 'center',
         }}
       >
+        <motion.div
+          className="absolute inset-0"
+          style={{ scale: imageScale, y: imageY }}
+        />
         <div className="absolute inset-0 bg-black/40 backdrop-blur-sm" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/20 to-transparent" />
       </div>
 
       {/* Content */}
@@ -66,25 +75,47 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
         animate="visible"
       >
         {/* Decorative Line */}
-        <motion.div
-          className="w-12 h-0.5 bg-soft-gold mx-auto mb-8"
-          variants={itemVariants}
-        />
+        <motion.div className="mb-8 flex items-center justify-center gap-3" variants={itemVariants}>
+          <span className="h-px w-10 bg-soft-gold/70" />
+          <span className="text-soft-gold text-xs uppercase tracking-[0.35em]">Forever begins here</span>
+          <span className="h-px w-10 bg-soft-gold/70" />
+        </motion.div>
 
         {/* Subtitle */}
         <motion.p
-          className="text-soft-gold text-sm md:text-base uppercase tracking-[0.2em] mb-6"
+          className="text-soft-gold text-sm md:text-base uppercase tracking-[0.28em] mb-6"
           variants={itemVariants}
         >
-          We are getting married
+          A day wrapped in love
         </motion.p>
 
         {/* Names */}
         <motion.div variants={itemVariants} className="mb-6">
-          <h1 className="text-5xl md:text-7xl font-serif font-bold text-cream mb-4">
-            {groomName}
-            <span className="block text-soft-gold my-2">&</span>
-            {brideName}
+          <h1 className="text-5xl md:text-7xl font-serif font-bold text-cream mb-4 leading-[0.92]">
+            <motion.span
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.9 }}
+              className="block"
+            >
+              {groomName}
+            </motion.span>
+            <motion.span
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.7, delay: 0.25 }}
+              className="block text-soft-gold my-2 text-4xl md:text-5xl"
+            >
+              &
+            </motion.span>
+            <motion.span
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.9, delay: 0.35 }}
+              className="block"
+            >
+              {brideName}
+            </motion.span>
           </h1>
         </motion.div>
 
@@ -94,6 +125,13 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           variants={itemVariants}
         >
           {formattedDate}
+        </motion.p>
+
+        <motion.p
+          className="mx-auto mb-10 max-w-xl text-sm md:text-base text-champagne/90 leading-7"
+          variants={itemVariants}
+        >
+          Join us as two families become one, and a beautiful new chapter begins with warmth, grace, and celebration.
         </motion.p>
 
         {/* CTA Buttons */}
@@ -116,10 +154,17 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
         </motion.div>
 
         {/* Decorative Line */}
-        <motion.div
-          className="w-12 h-0.5 bg-soft-gold mx-auto mt-16"
-          variants={itemVariants}
-        />
+        <motion.div className="mt-16 flex items-center justify-center gap-3" variants={itemVariants}>
+          <span className="h-px w-10 bg-soft-gold/70" />
+          <motion.span
+            animate={{ y: [0, -4, 0] }}
+            transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
+            className="text-soft-gold text-lg"
+          >
+            ✦
+          </motion.span>
+          <span className="h-px w-10 bg-soft-gold/70" />
+        </motion.div>
       </motion.div>
 
       {/* Scroll Indicator */}

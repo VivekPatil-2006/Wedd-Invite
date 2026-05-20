@@ -38,9 +38,9 @@ export const CountdownSection: React.FC<CountdownSectionProps> = ({ weddingDate 
         {/* Countdown Cards */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-12">
           <CountdownCard value={countdown.days} label="Days" delay={0} />
-          <CountdownCard value={countdown.hours} label="Hours" delay={0.1} />
-          <CountdownCard value={countdown.minutes} label="Minutes" delay={0.2} />
-          <CountdownCard value={countdown.seconds} label="Seconds" delay={0.3} />
+          <CountdownCard value={countdown.hours} label="Hours" delay={0.12} />
+          <CountdownCard value={countdown.minutes} label="Minutes" delay={0.24} />
+          <CountdownCard value={countdown.seconds} label="Seconds" delay={0.36} />
         </div>
 
         {/* Decorative Message */}
@@ -52,15 +52,23 @@ export const CountdownSection: React.FC<CountdownSectionProps> = ({ weddingDate 
           className="mt-12"
         >
           <GlassCard hover className="text-center py-8">
-            <div className="flex justify-center gap-2 mb-4 text-3xl text-soft-gold">
+            <motion.div
+              className="flex justify-center gap-2 mb-4 text-3xl text-soft-gold"
+              animate={{ opacity: [0.65, 1, 0.65], scale: [1, 1.04, 1] }}
+              transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
+            >
               ✿ ✿ ✿
-            </div>
+            </motion.div>
             <p className="text-lg text-dark-charcoal dark:text-cream italic font-light">
               "Love is not just looking at each other, it's looking in the same direction together."
             </p>
-            <div className="flex justify-center gap-2 mt-4 text-3xl text-soft-gold">
+            <motion.div
+              className="flex justify-center gap-2 mt-4 text-3xl text-soft-gold"
+              animate={{ opacity: [0.65, 1, 0.65], scale: [1, 1.04, 1] }}
+              transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
+            >
               ✿ ✿ ✿
-            </div>
+            </motion.div>
           </GlassCard>
         </motion.div>
       </div>

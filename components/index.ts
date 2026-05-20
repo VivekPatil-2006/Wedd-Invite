@@ -6,3 +6,5 @@ export { ScrollIndicator } from './ScrollIndicator';
 export { ParticleBackground } from './ParticleBackground';
 export { CountdownCard } from './CountdownCard';
 export { FloatingMenu } from './FloatingMenu';
+export { AtmosphericBackdrop } from './AtmosphericBackdrop';
+export { ScrollProgress } from './ScrollProgress';

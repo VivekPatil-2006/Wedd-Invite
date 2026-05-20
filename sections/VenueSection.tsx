@@ -61,7 +61,7 @@ export const VenueSection: React.FC<VenueSectionProps> = ({
               width="100%"
               height="100%"
               frameBorder="0"
-              src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyDxD82TSVeKrLz1TNc8P04V2MsJKo98MIw&q=${encodeURIComponent(venue.address)}`}
+              src={`https://www.google.com/maps?q=${encodeURIComponent(venue.address)}&output=embed`}
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
