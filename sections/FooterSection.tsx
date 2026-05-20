@@ -15,6 +15,7 @@ interface FooterSectionProps {
   initials: string;
   socialLinks: Record<string, string>;
   thankyouMessage: string;
+  id?: string;
 }
 
 export const FooterSection: React.FC<FooterSectionProps> = ({
@@ -23,6 +24,7 @@ export const FooterSection: React.FC<FooterSectionProps> = ({
   initials,
   socialLinks,
   thankyouMessage,
+  id,
 }) => {
   const socialIcons = [
     { name: 'Instagram', icon: FaInstagram, url: socialLinks.instagram },
@@ -31,7 +33,7 @@ export const FooterSection: React.FC<FooterSectionProps> = ({
   ];
 
   return (
-    <footer className="relative w-full bg-gradient-to-b from-cream/50 to-dark-charcoal/10 dark:from-dark-charcoal to-dark-charcoal/50">
+    <footer id={id} className="relative w-full bg-gradient-to-b from-cream/50 to-dark-charcoal/10 dark:from-dark-charcoal to-dark-charcoal/50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         {/* Thank You Message */}
         <motion.div
