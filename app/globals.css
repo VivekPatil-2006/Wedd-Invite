@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 0;
+}
+
+body {
+  @apply bg-cream text-dark-charcoal transition-colors duration-300;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+body.dark {
+  @apply bg-dark-charcoal text-cream;
+}
+
+/* Smooth Scroll for Lenis */
+html.lenis {
+  height: auto;
+}
+
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+/* Selection Styling */
+::selection {
+  @apply bg-dusty-rose text-cream;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-cream dark:bg-dark-charcoal;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-dusty-rose rounded-full transition-colors hover:bg-warm-brown;
+}
+
+/* Global Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+p, span, a {
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.3px;
+}
+
+/* Links */
+a {
+  @apply transition-colors duration-300;
+  
+  &:hover {
+    @apply text-dusty-rose;
+  }
+}
+
+/* Buttons */
+button {
+  @apply transition-all duration-300;
+}
+
+/* Input Fields */
+input, textarea {
+  @apply bg-cream dark:bg-dark-charcoal border border-soft-gold dark:border-warm-brown rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-dusty-rose transition-all;
+}
+
+input::placeholder, textarea::placeholder {
+  @apply text-warm-brown opacity-60;
+}
+
+/* Glassmorphism */
+.glass {
+  @apply bg-white/10 dark:bg-white/5 backdrop-blur-md border border-white/20 dark:border-white/10;
+}
+
+.glass-hover {
+  @apply glass hover:bg-white/20 dark:hover:bg-white/10 transition-all duration-300;
+}
+
+/* Gradient Text */
+.gradient-text {
+  @apply bg-gradient-to-r from-dusty-rose via-warm-brown to-soft-gold bg-clip-text text-transparent;
+}
+
+/* Section Container */
+.section-container {
+  @apply min-h-screen w-full flex items-center justify-center;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Stagger Animation */
+.stagger-item {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+/* Particle Animation */
+@keyframes particle-float {
+  0%, 100% {
+    transform: translateY(0) translateX(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.particle {
+  animation: particle-float 15s infinite ease-in-out;
+  position: fixed;
+  pointer-events: none;
+}
+
+/* Smooth Transitions */
+.page-transition {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Hover Lift Effect */
+.hover-lift {
+  @apply transition-all duration-300 hover:shadow-2xl hover:-translate-y-1;
+}
+
+/* Focus Styles */
+:focus-visible {
+  @apply outline-none ring-2 ring-dusty-rose ring-offset-2 dark:ring-offset-dark-charcoal;
+}
+
+/* Mobile Menu */
+.mobile-nav-enter {
+  animation: slideInUp 0.3s ease-out;
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,198 @@
+================================================================================
+SECTION 1: COUPLE INFORMATION
+================================================================================
+
+Groom's Full Name:
+[Enter groom's name here]
+
+Bride's Full Name:
+[Enter bride's name here]
+
+Couple Initials (2 letters):
+[Enter initials - e.g., AP]
+
+Wedding Date (Format: YYYY-MM-DD):
+[Enter date - e.g., 2024-12-15]
+
+Wedding Time (optional):
+[Enter time - e.g., 06:00 PM]
+
+================================================================================
+SECTION 2: VENUE INFORMATION
+================================================================================
+
+Venue Name:
+[Enter venue name]
+
+Complete Address:
+[Enter full address with street, city, state, country, postal code]
+
+Venue Phone Number:
+[Enter phone number]
+
+Venue Website:
+[Enter website URL]
+
+
+Parking Instructions:
+[Enter parking details]
+
+================================================================================
+SECTION 3: NEARBY ACCOMMODATIONS (Hotel/Resort Options)
+================================================================================
+
+HOTEL 1:
+  Name:
+  [Enter hotel name]
+  
+  Distance from Venue:
+  [Enter distance - e.g., 2 km away]
+  
+  Phone Number:
+  [Enter phone]
+  
+  Website:
+  [Enter URL]
+  
+  Special Rate/Discount:
+  [Enter discount - e.g., 20% discount for wedding guests]
+
+
+
+================================================================================
+SECTION 4: WEDDING DAY SCHEDULE (Events Timeline)
+================================================================================
+
+EVENT 1:
+  Time:
+  [Enter time - e.g., 04:00 PM]
+  
+  Event Title:
+  [Enter event name - e.g., Ceremony]
+  
+  Description:
+  [Enter 1-2 sentence description]
+  
+  Duration:
+  [Enter duration - e.g., 1 hour]
+
+
+EVENT 2:
+  Time:
+  [Enter time]
+  
+  Event Title:
+  [Enter event name - e.g., Welcome Cocktail]
+  
+  Description:
+  [Enter description]
+  
+  Duration:
+  [Enter duration]
+
+
+EVENT 3:
+  Time:
+  [Enter time]
+  
+  Event Title:
+  [Enter event name]
+  
+  Description:
+  [Enter description]
+  
+  Duration:
+  [Enter duration]
+
+
+
+(Add more events if needed - copy the format above)
+
+================================================================================
+SECTION 5: LOVE STORY TIMELINE (4-5 Important Moments)
+================================================================================
+
+STORY 1:
+  Title:
+  [Enter title - e.g., First Meet & Proposal]
+  
+  Year:
+  [Enter year - e.g., 2018]
+  
+  Description:
+  [Enter 2-3 sentences describing this moment]
+  
+  Image:
+  [Enter image URL or file path]
+  [Recommended size: 600x600px]
+
+
+STORY 2:
+  Title:
+  [Enter title - e.g., Engagement]
+  
+  Year:
+  [Enter year]
+  
+  Description:
+  [Enter description]
+  
+  Image:
+  [Enter image URL or file path]
+
+================================================================================
+SECTION 6: PHOTO GALLERY IMAGES (8-15 Images)
+================================================================================
+
+IMAGEs :
+  Category: [couple / venue / prewedding / engagement / portraits / memories]
+  Source: [URL or file path]
+  Description: [Brief description of the photo]
+
+
+
+================================================================================
+SECTION 7: MEAL OPTIONS (Diet Preferences)
+================================================================================
+
+Meal Option 1:
+[Enter meal type - e.g., Vegetarian]
+
+Meal Option 2:
+[Enter meal type - e.g., Non-Vegetarian]
+
+Meal Option 3:
+[Enter meal type - e.g., Vegan]
+
+Meal Option 4:
+[Enter meal type - e.g., Gluten-Free]
+
+Meal Option 5 (Optional):
+[Enter meal type]
+
+================================================================================
+SECTION 8: SOCIAL MEDIA LINKS
+================================================================================
+
+Instagram URL:
+[Enter Instagram profile URL - e.g., https://instagram.com/yourprofile]
+
+
+================================================================================
+SECTION 9: CONTACT & MESSAGING
+================================================================================
+
+Contact Email (for RSVP inquiries):
+[Enter email address]
+
+Couple Phone Number (Optional):
+[Enter phone number]
+
+Thank You Message (Paragraph for bottom of website):
+[Enter a heartfelt message to guests - 2-3 sentences]
+Example: "We are thrilled to share this special day with you. Your love, 
+blessings, and support mean the world to us. Let's create memories together!"
+
+Additional Message or Notes:
+[Add any other information or customizations you want]
+
