@@ -1,7 +1,7 @@
 export const coupleData = {
   groomName: 'Pranali Jitendra Patil',
   brideName: 'Rupesh Rajendra Shinde',
-  initials: 'Miss, Mr',
+  initials: '',
   weddingDate: new Date('2026-07-19T13:30:00'),
   heroImage: '/images/before-engagement.jpeg',
   venue: {
