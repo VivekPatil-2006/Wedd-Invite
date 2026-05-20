@@ -59,7 +59,7 @@ export const LoveStorySection: React.FC<LoveStorySectionProps> = ({ loveStory })
                       src={story.image}
                       alt={story.title}
                       fill
-                      className="object-cover"
+                      className={index === 0 ? 'object-contain bg-black/5' : 'object-cover'}
                       sizes="(max-width: 768px) 100vw, 50vw"
                       priority={index === 0}
                     />

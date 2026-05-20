@@ -8,7 +8,6 @@ import {
   LoveStorySection,
   EventScheduleSection,
   VenueSection,
-  RSVPSection,
   GallerySection,
   FooterSection,
 } from '@/sections';
@@ -55,8 +54,6 @@ export default function Home() {
         venue={coupleData.venue}
         accommodations={coupleData.accommodations}
       />
-
-      <RSVPSection mealOptions={coupleData.mealOptions} />
 
       <GallerySection images={galleryData} />
 

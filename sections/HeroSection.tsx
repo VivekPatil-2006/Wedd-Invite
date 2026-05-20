@@ -49,8 +49,9 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
       <div
         className="absolute inset-0 z-0"
         style={{
-          backgroundImage: `url('${heroImage || '/images/before-engagement.jpeg'}')`,
+          backgroundImage: `url('${heroImage || '/images/bg.png'}')`,
           backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat',
           backgroundPosition: 'center',
         }}
       >

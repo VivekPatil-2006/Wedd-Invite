@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaMapPin, FaPhone, FaGlobe, FaWifi, FaCar } from 'react-icons/fa';
+import { FaMapPin, FaPhone, FaGlobe, FaCar } from 'react-icons/fa';
 import { Button } from '@/components/Button';
 import { GlassCard } from '@/components/GlassCard';
 import { VenueInfo } from '@/types';
@@ -34,7 +34,6 @@ export const VenueSection: React.FC<VenueSectionProps> = ({
       className="relative min-h-screen w-full flex items-center justify-center py-20 px-4"
     >
       <div className="max-w-6xl w-full">
-        {/* Section Header */}
         <motion.div
           className="text-center mb-16"
           initial={{ opacity: 0, y: 20 }}
@@ -51,7 +50,6 @@ export const VenueSection: React.FC<VenueSectionProps> = ({
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-8">
-          {/* Map */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -71,7 +69,6 @@ export const VenueSection: React.FC<VenueSectionProps> = ({
             />
           </motion.div>
 
-          {/* Venue Details */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -130,11 +127,32 @@ export const VenueSection: React.FC<VenueSectionProps> = ({
           </motion.div>
         </div>
 
-        {/* Accommodations */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          viewport={{ once: true }}
+          className="mt-20"
+        >
+          <GlassCard hover>
+            <div className="flex items-start gap-4">
+              <FaCar className="text-dusty-rose text-2xl mt-1 flex-shrink-0" />
+              <div>
+                <h4 className="font-serif font-bold text-dark-charcoal dark:text-cream mb-2">
+                  Parking
+                </h4>
+                <p className="text-warm-brown dark:text-champagne text-sm">
+                  As per available space park your car.
+                </p>
+              </div>
+            </div>
+          </GlassCard>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.3 }}
           viewport={{ once: true }}
           className="mt-20"
         >
@@ -175,43 +193,6 @@ export const VenueSection: React.FC<VenueSectionProps> = ({
               </GlassCard>
             ))}
           </div>
-        </motion.div>
-
-        {/* Travel Tips */}
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          viewport={{ once: true }}
-          className="mt-20 grid md:grid-cols-2 gap-6"
-        >
-          <GlassCard hover>
-            <div className="flex items-start gap-4">
-              <FaCar className="text-dusty-rose text-2xl mt-1 flex-shrink-0" />
-              <div>
-                <h4 className="font-serif font-bold text-dark-charcoal dark:text-cream mb-2">
-                  Parking
-                </h4>
-                <p className="text-warm-brown dark:text-champagne text-sm">
-                  Free valet parking available at the venue. Please arrive 15 minutes early.
-                </p>
-              </div>
-            </div>
-          </GlassCard>
-
-          <GlassCard hover>
-            <div className="flex items-start gap-4">
-              <FaWifi className="text-dusty-rose text-2xl mt-1 flex-shrink-0" />
-              <div>
-                <h4 className="font-serif font-bold text-dark-charcoal dark:text-cream mb-2">
-                  Connectivity
-                </h4>
-                <p className="text-warm-brown dark:text-champagne text-sm">
-                  WiFi Password: Wedding2024
-                </p>
-              </div>
-            </div>
-          </GlassCard>
         </motion.div>
       </div>
     </section>
