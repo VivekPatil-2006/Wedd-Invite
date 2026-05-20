@@ -82,21 +82,20 @@ export const GallerySection: React.FC<GallerySectionProps> = ({ images }) => {
         >
           <AnimatePresence>
             {filteredImages.map((image, index) => (
-                <motion.div
-                  key={image.id}
-                  layout
-                  layoutId={`gallery-${image.id}`}
-                  initial={{ opacity: 0, scale: 0.96 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  exit={{ opacity: 0, scale: 0.96 }}
-                  transition={{ duration: 0.45 }}
-                  onClick={() => setSelectedId(image.id)}
-                  whileHover={{ scale: 1.02 }}
-                  className={`relative h-64 rounded-xl overflow-hidden cursor-pointer ${
-                    index % 5 === 0 ? 'md:col-span-2 md:row-span-2 h-96' : ''
-                  }`}
-                  style={{ willChange: 'transform' }}
-                >
+              <motion.div
+                key={image.id}
+                layoutId={`gallery-${image.id}`}
+                initial={{ opacity: 0, scale: 0.98 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.98 }}
+                transition={{ duration: 0.45 }}
+                onClick={() => setSelectedId(image.id)}
+                whileHover={{ scale: 1.015 }}
+                className={`relative h-64 rounded-xl overflow-hidden cursor-pointer ${
+                  index % 5 === 0 ? 'md:col-span-2 md:row-span-2 h-96' : ''
+                }`}
+                style={{ willChange: 'transform' }}
+              >
                   <Image
                     src={image.src}
                     alt={image.alt}
