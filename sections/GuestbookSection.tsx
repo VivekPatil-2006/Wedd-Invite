@@ -13,13 +13,13 @@ export const GuestbookSection: React.FC = () => {
       id: '1',
       guestName: 'Sarah & John',
       message: 'Wishing you both a lifetime of love and happiness!',
-      timestamp: new Date('2024-01-15'),
+      timestamp: new Date('2026-01-15'),
     },
     {
       id: '2',
       guestName: 'The Smith Family',
       message: 'So excited to celebrate this special day with you!',
-      timestamp: new Date('2024-01-14'),
+      timestamp: new Date('2026-01-14'),
     },
   ]);
 
