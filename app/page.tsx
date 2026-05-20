@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useEffect } from 'react';
-import { Navbar, ParticleBackground, FloatingMenu } from '@/components';
+import { Navbar } from '@/components';
 import {
   HeroSection,
   CountdownSection,
@@ -10,7 +10,6 @@ import {
   VenueSection,
   RSVPSection,
   GallerySection,
-  GuestbookSection,
   FooterSection,
 } from '@/sections';
 import { useSmoothScroll } from '@/hooks/useSmoothScroll';
@@ -35,20 +34,15 @@ export default function Home() {
 
   return (
     <main className="relative bg-cream dark:bg-dark-charcoal text-dark-charcoal dark:text-cream transition-colors duration-300">
-      {/* Background Elements */}
-      <ParticleBackground />
-
       {/* Navigation */}
       <Navbar coupleInitials={coupleData.initials} />
-
-      {/* Floating Menu */}
-      <FloatingMenu />
 
       {/* Sections */}
       <HeroSection
         groomName={coupleData.groomName}
         brideName={coupleData.brideName}
         weddingDate={coupleData.weddingDate}
+        heroImage={coupleData.heroImage}
       />
 
       <CountdownSection weddingDate={coupleData.weddingDate} />
@@ -65,8 +59,6 @@ export default function Home() {
       <RSVPSection mealOptions={coupleData.mealOptions} />
 
       <GallerySection images={galleryData} />
-
-      <GuestbookSection />
 
       <FooterSection
         groomName={coupleData.groomName}

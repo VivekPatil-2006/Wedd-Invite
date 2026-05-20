@@ -28,7 +28,7 @@ A luxury, cinematic wedding invitation website built with cutting-edge technolog
 5. **Venue Information** - Google Maps integration, accommodations, and travel tips
 6. **RSVP Form** - Premium form with meal preferences and special requests
 7. **Photo Gallery** - Masonry layout with lightbox and category filters
-8. **Guest Book** - Real-time message system for guests
+8. **Guest Book** - Guest wishes/messages section
 9. **Footer** - Thank you message with social media links
 
 ### 🎯 Advanced Features

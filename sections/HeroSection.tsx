@@ -9,12 +9,14 @@ interface HeroSectionProps {
   groomName: string;
   brideName: string;
   weddingDate: Date;
+  heroImage?: string;
 }
 
 export const HeroSection: React.FC<HeroSectionProps> = ({
   groomName,
   brideName,
   weddingDate,
+  heroImage,
 }) => {
   const formattedDate = formatDate(weddingDate);
 
@@ -47,7 +49,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
       <div
         className="absolute inset-0 z-0"
         style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1519741497674-611481863552?w=1200&h=800&fit=crop')`,
+          backgroundImage: `url('${heroImage || '/images/before-engagement.jpeg'}')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
@@ -99,7 +101,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           variants={itemVariants}
         >
           <a
-            href="#rsvp"
+            href="#schedule"
             className="px-8 py-3 bg-soft-gold text-dark-charcoal font-serif font-semibold rounded-lg hover:bg-champagne transition-all duration-300 transform hover:scale-105"
           >
             Save The Date

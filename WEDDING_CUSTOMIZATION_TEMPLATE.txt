@@ -3,39 +3,35 @@ SECTION 1: COUPLE INFORMATION
 ================================================================================
 
 Groom's Full Name:
-[Enter groom's name here]
+[Pranali Jitendra Patil]
 
 Bride's Full Name:
-[Enter bride's name here]
+[Rupesh Rajendra Shinde]
 
 Couple Initials (2 letters):
-[Enter initials - e.g., AP]
+[Miss, Mr]
 
 Wedding Date (Format: YYYY-MM-DD):
-[Enter date - e.g., 2024-12-15]
+[Enter date - 2026-07-19]
 
 Wedding Time (optional):
-[Enter time - e.g., 06:00 PM]
+[Enter time - e.g., 01:30 PM]
 
 ================================================================================
 SECTION 2: VENUE INFORMATION
 ================================================================================
 
 Venue Name:
-[Enter venue name]
+[Kautika Palace ]
 
 Complete Address:
-[Enter full address with street, city, state, country, postal code]
+[Khanapur-Balawadi road, Khanapur, Tal- Khanapur, Dist-Sangli (MH)]
 
 Venue Phone Number:
-[Enter phone number]
-
-Venue Website:
-[Enter website URL]
-
+[9833884205]
 
 Parking Instructions:
-[Enter parking details]
+[As per available space park your car]
 
 ================================================================================
 SECTION 3: NEARBY ACCOMMODATIONS (Hotel/Resort Options)
@@ -43,21 +39,11 @@ SECTION 3: NEARBY ACCOMMODATIONS (Hotel/Resort Options)
 
 HOTEL 1:
   Name:
-  [Enter hotel name]
+  [Hotel Mayur palace]
   
   Distance from Venue:
-  [Enter distance - e.g., 2 km away]
-  
-  Phone Number:
-  [Enter phone]
-  
-  Website:
-  [Enter URL]
-  
-  Special Rate/Discount:
-  [Enter discount - e.g., 20% discount for wedding guests]
-
-
+  [2 km away]
+ 
 
 ================================================================================
 SECTION 4: WEDDING DAY SCHEDULE (Events Timeline)
@@ -65,48 +51,37 @@ SECTION 4: WEDDING DAY SCHEDULE (Events Timeline)
 
 EVENT 1:
   Time:
-  [Enter time - e.g., 04:00 PM]
+  [Enter time - e.g., 10:00 AM]
   
   Event Title:
-  [Enter event name - e.g., Ceremony]
-  
-  Description:
-  [Enter 1-2 sentence description]
+  [Enter event name - e.g., Haladi]
   
   Duration:
-  [Enter duration - e.g., 1 hour]
+  [Enter duration - e.g., 45 mins]
 
 
 EVENT 2:
   Time:
-  [Enter time]
+  [Enter time - 01:30 PM]
   
   Event Title:
-  [Enter event name - e.g., Welcome Cocktail]
-  
-  Description:
-  [Enter description]
+  [Enter event name - e.g., Wedding]
   
   Duration:
-  [Enter duration]
+  [30 mins]
 
 
 EVENT 3:
   Time:
-  [Enter time]
+  [2 Onwards]
   
   Event Title:
-  [Enter event name]
+  [Saptpaddi]
   
-  Description:
-  [Enter description]
   
   Duration:
-  [Enter duration]
+  [30 mins]
 
-
-
-(Add more events if needed - copy the format above)
 
 ================================================================================
 SECTION 5: LOVE STORY TIMELINE (4-5 Important Moments)
@@ -119,9 +94,6 @@ STORY 1:
   Year:
   [Enter year - e.g., 2018]
   
-  Description:
-  [Enter 2-3 sentences describing this moment]
-  
   Image:
   [Enter image URL or file path]
   [Recommended size: 600x600px]
@@ -129,13 +101,13 @@ STORY 1:
 
 STORY 2:
   Title:
-  [Enter title - e.g., Engagement]
+  [Enter title - Engagement]
   
   Year:
-  [Enter year]
+  [2026]
   
   Description:
-  [Enter description]
+  [Sucessfully done at Hometown]
   
   Image:
   [Enter image URL or file path]
@@ -155,38 +127,30 @@ IMAGEs :
 SECTION 7: MEAL OPTIONS (Diet Preferences)
 ================================================================================
 
-Meal Option 1:
+Meal Options:
 [Enter meal type - e.g., Vegetarian]
 
-Meal Option 2:
-[Enter meal type - e.g., Non-Vegetarian]
+1.Puri 
+2.Kurma
+3.Varan Rice
+4.Masala Rice
+5.Papad
+6.Kachumbar
+7.Basundi
+8.Bhaji
 
-Meal Option 3:
-[Enter meal type - e.g., Vegan]
-
-Meal Option 4:
-[Enter meal type - e.g., Gluten-Free]
-
-Meal Option 5 (Optional):
-[Enter meal type]
 
 ================================================================================
 SECTION 8: SOCIAL MEDIA LINKS
 ================================================================================
 
 Instagram URL:
-[Enter Instagram profile URL - e.g., https://instagram.com/yourprofile]
+[Enter Instagram profile URL - e.g., https://instagram.com/pranali.patil_12]
 
 
 ================================================================================
 SECTION 9: CONTACT & MESSAGING
 ================================================================================
-
-Contact Email (for RSVP inquiries):
-[Enter email address]
-
-Couple Phone Number (Optional):
-[Enter phone number]
 
 Thank You Message (Paragraph for bottom of website):
 [Enter a heartfelt message to guests - 2-3 sentences]

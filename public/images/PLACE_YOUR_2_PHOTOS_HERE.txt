@@ -1,0 +1,5 @@
+Add your two photos in this folder with exact file names:
+1) before-engagement.jpg
+2) engagement.jpg
+
+These files are referenced by the website data.

@@ -60,6 +60,7 @@ export const LoveStorySection: React.FC<LoveStorySectionProps> = ({ loveStory })
                       alt={story.title}
                       fill
                       className="object-cover"
+                      sizes="(max-width: 768px) 100vw, 50vw"
                       priority={index === 0}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />

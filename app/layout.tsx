@@ -11,15 +11,15 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: 'Arjun & Priya - Wedding Invitation',
+  title: 'Pranali & Rupesh - Wedding Invitation',
   description:
-    'Join us as we celebrate the union of two souls. A luxury modern wedding experience.',
+    'Join us to celebrate the wedding of Pranali and Rupesh on 19 July 2026.',
   keywords:
     'wedding, invitation, celebration, love, marriage, premium',
   openGraph: {
-    title: 'Arjun & Priya - Wedding Invitation',
+    title: 'Pranali & Rupesh - Wedding Invitation',
     description:
-      'Join us for a magical day as we celebrate our love and commitment.',
+      'Wedding invitation for Pranali and Rupesh. Your presence is our blessing.',
     type: 'website',
   },
   authors: [{ name: 'Wedding Team' }],
