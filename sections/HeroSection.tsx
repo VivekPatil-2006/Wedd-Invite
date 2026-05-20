@@ -2,7 +2,6 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { useScroll, useTransform } from 'framer-motion';
 import { ScrollIndicator } from '@/components/ScrollIndicator';
 import { formatDate } from '@/lib/dateUtils';
 
@@ -20,9 +19,6 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
   heroImage,
 }) => {
   const formattedDate = formatDate(weddingDate);
-  const { scrollY } = useScroll();
-  const imageScale = useTransform(scrollY, [0, 500], [1.08, 1.18]);
-  const imageY = useTransform(scrollY, [0, 500], [0, 40]);
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -60,11 +56,12 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
         }}
       >
         <motion.div
-          className="absolute inset-0"
-          style={{ scale: imageScale, y: imageY }}
+          className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.10),transparent_55%)]"
+          animate={{ opacity: [0.75, 1, 0.75] }}
+          transition={{ duration: 10, repeat: Infinity, ease: 'easeInOut' }}
         />
-        <div className="absolute inset-0 bg-black/40 backdrop-blur-sm" />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/20 to-transparent" />
+        <div className="absolute inset-0 bg-black/32 backdrop-blur-[1px]" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/58 via-black/18 to-transparent" />
       </div>
 
       {/* Content */}
@@ -91,7 +88,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
 
         {/* Names */}
         <motion.div variants={itemVariants} className="mb-6">
-          <h1 className="text-5xl md:text-7xl font-serif font-bold text-cream mb-4 leading-[0.92]">
+          <h1 className="text-5xl md:text-7xl font-serif font-bold text-cream mb-4 leading-[0.9] drop-shadow-[0_12px_40px_rgba(0,0,0,0.35)]">
             <motion.span
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -121,14 +118,14 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
 
         {/* Date */}
         <motion.p
-          className="text-xl md:text-2xl text-champagne mb-12 font-light"
+          className="text-xl md:text-2xl text-champagne mb-12 font-light tracking-[0.08em]"
           variants={itemVariants}
         >
           {formattedDate}
         </motion.p>
 
         <motion.p
-          className="mx-auto mb-10 max-w-xl text-sm md:text-base text-champagne/90 leading-7"
+          className="mx-auto mb-10 max-w-xl text-sm md:text-base text-champagne/90 leading-8"
           variants={itemVariants}
         >
           Join us as two families become one, and a beautiful new chapter begins with warmth, grace, and celebration.
@@ -141,13 +138,13 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
         >
           <a
             href="#schedule"
-            className="px-8 py-3 bg-soft-gold text-dark-charcoal font-serif font-semibold rounded-lg hover:bg-champagne transition-all duration-300 transform hover:scale-105"
+            className="px-8 py-3 bg-soft-gold text-dark-charcoal font-serif font-semibold rounded-full hover:bg-champagne transition-all duration-300 transform hover:scale-[1.03] shadow-lg shadow-black/10"
           >
             Save The Date
           </a>
           <a
             href="#countdown"
-            className="px-8 py-3 border-2 border-soft-gold text-soft-gold font-serif font-semibold rounded-lg hover:bg-soft-gold hover:text-dark-charcoal transition-all duration-300"
+            className="px-8 py-3 border border-soft-gold/90 text-soft-gold font-serif font-semibold rounded-full hover:bg-soft-gold hover:text-dark-charcoal transition-all duration-300 backdrop-blur-sm"
           >
             View Countdown
           </a>

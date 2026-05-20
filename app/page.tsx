@@ -11,16 +11,12 @@ import {
   GallerySection,
   FooterSection,
 } from '@/sections';
-import { useAutoJourney, useSmoothScroll } from '@/hooks';
+import { useSmoothScroll } from '@/hooks/useSmoothScroll';
 import coupleData from '@/config/coupleData';
 import { galleryData } from '@/data/gallery';
 
 export default function Home() {
   useSmoothScroll();
-  useAutoJourney({
-    sectionIds: ['hero', 'countdown', 'lovestory', 'schedule', 'venue', 'gallery', 'footer'],
-    intervalMs: 9000,
-  });
 
   useEffect(() => {
     // Check for dark mode preference
@@ -70,7 +66,6 @@ export default function Home() {
         initials={coupleData.initials}
         socialLinks={coupleData.socialLinks}
         thankyouMessage={coupleData.thankyouMessage}
-        id="footer"
       />
     </main>
   );

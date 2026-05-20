@@ -19,10 +19,18 @@ body {
   @apply bg-cream text-dark-charcoal transition-colors duration-300;
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
+  background:
+    radial-gradient(circle at top, rgba(247, 234, 226, 0.9), transparent 32%),
+    radial-gradient(circle at bottom left, rgba(212, 165, 165, 0.14), transparent 28%),
+    linear-gradient(180deg, #faf8f3 0%, #fffdf8 55%, #f8f1ea 100%);
 }
 
 body.dark {
   @apply bg-dark-charcoal text-cream;
+  background:
+    radial-gradient(circle at top, rgba(255, 255, 255, 0.05), transparent 32%),
+    radial-gradient(circle at bottom left, rgba(212, 165, 165, 0.08), transparent 28%),
+    linear-gradient(180deg, #1a1a1a 0%, #141414 60%, #1f1a1b 100%);
 }
 
 /* Smooth Scroll for Lenis */
@@ -101,7 +109,7 @@ input::placeholder, textarea::placeholder {
 
 /* Glassmorphism */
 .glass {
-  @apply bg-white/10 dark:bg-white/5 backdrop-blur-md border border-white/20 dark:border-white/10;
+  @apply bg-white/10 dark:bg-white/5 backdrop-blur-sm border border-white/20 dark:border-white/10;
 }
 
 .glass-hover {
@@ -157,7 +165,16 @@ input::placeholder, textarea::placeholder {
 
 /* Hover Lift Effect */
 .hover-lift {
-  @apply transition-all duration-300 hover:shadow-2xl hover:-translate-y-1;
+  @apply transition-all duration-500 hover:shadow-xl hover:-translate-y-0.5;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 /* Focus Styles */
