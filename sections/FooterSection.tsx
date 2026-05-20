@@ -43,8 +43,8 @@ export const FooterSection: React.FC<FooterSectionProps> = ({
         >
           <motion.div
             className="text-5xl mb-6"
-            animate={{ scale: [1, 1.1, 1] }}
-            transition={{ duration: 2, repeat: Infinity }}
+            animate={{ scale: [1, 1.03, 1] }}
+            transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
           >
             ❤️
           </motion.div>
@@ -126,14 +126,14 @@ export const FooterSection: React.FC<FooterSectionProps> = ({
             {groomName} & {brideName}
           </p>
           <p className="text-xs text-soft-gold uppercase tracking-widest">
-            © 2024. All rights reserved.
+            © 2026. All rights reserved.
           </p>
 
           {/* Decorative Element */}
           <motion.div
             className="mt-8 flex justify-center gap-3 text-3xl"
-            animate={{ y: [0, -10, 0] }}
-            transition={{ duration: 4, repeat: Infinity }}
+            animate={{ y: [0, -6, 0] }}
+            transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
           >
             <span>✿</span>
             <span>✿</span>

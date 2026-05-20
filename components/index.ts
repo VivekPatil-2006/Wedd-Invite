@@ -8,3 +8,4 @@ export { CountdownCard } from './CountdownCard';
 export { FloatingMenu } from './FloatingMenu';
 export { AtmosphericBackdrop } from './AtmosphericBackdrop';
 export { ScrollProgress } from './ScrollProgress';
+export { FloatingPetals } from './FloatingPetals';

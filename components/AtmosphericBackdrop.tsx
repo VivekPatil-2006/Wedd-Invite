@@ -16,15 +16,15 @@ export const AtmosphericBackdrop: React.FC = () => {
       {orbs.map((orb, index) => (
         <motion.span
           key={index}
-          className={`absolute ${orb.className} rounded-full bg-gradient-to-br from-soft-gold/18 via-blush/14 to-transparent blur-2xl dark:from-soft-gold/8 dark:via-blush/8`}
+          className={`absolute ${orb.className} rounded-full bg-gradient-to-br from-soft-gold/14 via-blush/10 to-transparent blur-xl dark:from-soft-gold/6 dark:via-blush/6`}
           animate={{
-            y: [0, -14, 0],
-            x: [0, 8, 0],
-            scale: [1, 1.04, 1],
-            opacity: [0.35, 0.55, 0.35],
+            y: [0, -8, 0],
+            x: [0, 4, 0],
+            scale: [1, 1.02, 1],
+            opacity: [0.28, 0.44, 0.28],
           }}
           transition={{
-            duration: 14 + index * 2,
+            duration: 20 + index * 2,
             repeat: Infinity,
             ease: 'easeInOut',
             delay: orb.delay,
@@ -33,9 +33,9 @@ export const AtmosphericBackdrop: React.FC = () => {
       ))}
 
       <motion.div
-        className="absolute left-1/2 top-[18%] h-[30rem] w-[30rem] -translate-x-1/2 rounded-full bg-[radial-gradient(circle,rgba(255,255,255,0.20),rgba(255,255,255,0.02)_58%,transparent_72%)] blur-2xl"
-        animate={{ opacity: [0.28, 0.48, 0.28], scale: [0.98, 1.01, 0.98] }}
-        transition={{ duration: 18, repeat: Infinity, ease: 'easeInOut' }}
+        className="absolute left-1/2 top-[18%] h-[26rem] w-[26rem] -translate-x-1/2 rounded-full bg-[radial-gradient(circle,rgba(255,255,255,0.16),rgba(255,255,255,0.02)_58%,transparent_72%)] blur-xl"
+        animate={{ opacity: [0.22, 0.38, 0.22], scale: [0.99, 1.005, 0.99] }}
+        transition={{ duration: 26, repeat: Infinity, ease: 'easeInOut' }}
       />
     </div>
   );

@@ -33,6 +33,26 @@ body.dark {
     linear-gradient(180deg, #1a1a1a 0%, #141414 60%, #1f1a1b 100%);
 }
 
+:root {
+  --pastel-rose: #f7d7dc;
+  --pastel-peach: #fbe7d6;
+  --pastel-lilac: #efe6fb;
+  --lux-cream: #fffaf5;
+}
+
+/* Petal visuals */
+.petal {
+  position: absolute;
+  top: -6%;
+  border-radius: 48% 52% 52% 48% / 40% 60% 40% 60%;
+  background: radial-gradient(circle at 30% 30%, var(--pastel-rose), var(--pastel-peach));
+  mix-blend-mode: screen;
+  filter: drop-shadow(0 6px 10px rgba(200,160,170,0.08));
+  opacity: 0.9;
+  will-change: transform, opacity;
+}
+
+
 /* Smooth Scroll for Lenis */
 html.lenis {
   height: auto;

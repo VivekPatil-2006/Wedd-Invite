@@ -136,14 +136,14 @@ export const GuestbookSection: React.FC = () => {
                   </p>
                 </div>
 
-                {/* Floating animation */}
-                <motion.div
-                  className="mt-3 text-2xl"
-                  animate={{ y: [0, -5, 0] }}
-                  transition={{ duration: 3, repeat: Infinity }}
+                {/* Subtle interaction for emoji */}
+                <motion.span
+                  className="mt-3 text-2xl inline-block"
+                  whileHover={{ y: -6, scale: 1.02 }}
+                  transition={{ duration: 0.25 }}
                 >
                   💕
-                </motion.div>
+                </motion.span>
               </GlassCard>
             </motion.div>
           ))}

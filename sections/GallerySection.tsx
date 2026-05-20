@@ -82,32 +82,36 @@ export const GallerySection: React.FC<GallerySectionProps> = ({ images }) => {
         >
           <AnimatePresence>
             {filteredImages.map((image, index) => (
-              <motion.div
-                key={image.id}
-                layout
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.8 }}
-                transition={{ duration: 0.4 }}
-                onClick={() => setSelectedId(image.id)}
-                className={`relative h-64 rounded-xl overflow-hidden cursor-pointer group ${
-                  index % 5 === 0 ? 'md:col-span-2 md:row-span-2 h-96' : ''
-                }`}
-              >
-                <Image
-                  src={image.src}
-                  alt={image.alt}
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-110"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300 flex items-center justify-center">
-                  <span className="text-white text-3xl opacity-0 group-hover:opacity-100 transition-opacity">
-                    🔍
-                  </span>
-                </div>
-              </motion.div>
-            ))}
+                <motion.div
+                  key={image.id}
+                  layout
+                  layoutId={`gallery-${image.id}`}
+                  initial={{ opacity: 0, scale: 0.96 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.96 }}
+                  transition={{ duration: 0.45 }}
+                  onClick={() => setSelectedId(image.id)}
+                  whileHover={{ scale: 1.02 }}
+                  className={`relative h-64 rounded-xl overflow-hidden cursor-pointer ${
+                    index % 5 === 0 ? 'md:col-span-2 md:row-span-2 h-96' : ''
+                  }`}
+                  style={{ willChange: 'transform' }}
+                >
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    fill
+                    className="object-cover transition-transform duration-400"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    style={{ willChange: 'transform' }}
+                  />
+                  <div className="absolute inset-0 bg-black/0 hover:bg-black/36 transition-colors duration-300 flex items-center justify-center">
+                    <span className="text-white text-3xl opacity-0 hover:opacity-100 transition-opacity">
+                      🔍
+                    </span>
+                  </div>
+                </motion.div>
+              ))}
           </AnimatePresence>
         </motion.div>
 
@@ -123,10 +127,9 @@ export const GallerySection: React.FC<GallerySectionProps> = ({ images }) => {
             >
               <motion.div
                 className="relative max-w-4xl w-full max-h-96 md:max-h-[600px]"
-                initial={{ scale: 0.9 }}
-                animate={{ scale: 1 }}
-                exit={{ scale: 0.9 }}
+                layoutId={`gallery-${selectedImage.id}`}
                 onClick={(e) => e.stopPropagation()}
+                style={{ willChange: 'transform' }}
               >
                 <div className="relative w-full h-96 md:h-[600px]">
                   <Image
@@ -135,6 +138,7 @@ export const GallerySection: React.FC<GallerySectionProps> = ({ images }) => {
                     fill
                     className="object-contain"
                     sizes="90vw"
+                    style={{ willChange: 'transform' }}
                   />
                 </div>
 
